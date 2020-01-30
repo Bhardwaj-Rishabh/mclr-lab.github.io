@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class='navbar-brand page-scroll' href='/'>
+                <!--<span  style='background:url(http://127.0.0.1:4000/images/logo.png) no-repeat; height:100%; width:100%; position:absolute'></span>-->
+                <!--<span style='font-family:"Open Sans" font-weight:300'>{{ site.name  }}</span>-->
+                <!--<span style='background:url() no-repeat;  position: absolute; height: 100%;width: 50%;  top: 0.3em;'></span>-->
+
+                <!--<img height="50" src="/images/logo.jpeg" data-action="zoom" />-->
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
+                    {% for nav in site.nav %}
+                    <li><a class='name' href="{{ nav.href }}">{{ nav.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
